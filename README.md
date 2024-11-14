@@ -5,7 +5,7 @@
   <a href="https://documenter.getpostman.com/view/32102231/2sAY55adcE" target="_blank">
     <img src="https://img.shields.io/badge/API%20Documentation-Postman-orange?logo=postman&style=for-the-badge" alt="API Documentation">
   </a>
-  <a href="https://books-hub-live-link.com" target="_blank">
+  <a href="https://vercel.com/sinanptms/books-hub" target="_blank">
     <img src="https://img.shields.io/badge/Live%20App-Books%20Hub-green?style=for-the-badge" alt="Live App">
   </a>
 </p>
