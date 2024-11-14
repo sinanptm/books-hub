@@ -50,9 +50,7 @@ CLIENT_URL=http://localhost:3000</code></pre>
 
 <h2>💻 Running the App</h2>
 <p>To start the server:</p>
-<pre><code>cd server<br>pnpm start</code></pre>
-<p>To start the client:</p>
-<pre><code>cd client<br>pnpm start</code></pre>
+<pre><code>cd .. (from root)<br>pnpm start</code></pre>
 
 <h2>🛠️ Tools Used</h2>
 <ul>
@@ -63,8 +61,3 @@ CLIENT_URL=http://localhost:3000</code></pre>
   <li>Vite - Build Tool</li>
 </ul>
 
-<h2>🤝 Contributing</h2>
-<p>Contributions are welcome! Feel free to submit pull requests or open issues.</p>
-
-<h2>📜 License</h2>
-<p>This project is licensed under the MIT License.</p>
