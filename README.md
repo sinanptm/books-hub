@@ -1,6 +1,15 @@
 <h1 align="center">📚 Books Hub</h1>
 <p align="center">A modern web application for listing and managing books, built with the MERN stack.</p>
 
+<p align="center">
+  <a href="https://documenter.getpostman.com/view/32102231/2sAY55adcE" target="_blank">
+    <img src="https://img.shields.io/badge/API%20Documentation-Postman-orange?logo=postman&style=for-the-badge" alt="API Documentation">
+  </a>
+  <a href="https://books-hub-live-link.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20App-Books%20Hub-green?style=for-the-badge" alt="Live App">
+  </a>
+</p>
+
 <h2>✨ Tech Stack</h2>
 <ul>
   <li>⚛️ <b>Frontend:</b> React, Vite, Tailwind CSS, TypeScript</li>
@@ -49,8 +58,14 @@ CLIENT_URL=http://localhost:3000</code></pre>
 </ul>
 
 <h2>💻 Running the App</h2>
+<p>You can start the entire application from the root directory:</p>
+<pre><code>pnpm start</code></pre>
+
+<p>Or, to start each part individually:</p>
 <p>To start the server:</p>
-<pre><code>cd .. (from root)<br>pnpm start</code></pre>
+<pre><code>cd server<br>pnpm start</code></pre>
+<p>To start the client:</p>
+<pre><code>cd client<br>pnpm dev</code></pre>
 
 <h2>🛠️ Tools Used</h2>
 <ul>
@@ -61,3 +76,5 @@ CLIENT_URL=http://localhost:3000</code></pre>
   <li>Vite - Build Tool</li>
 </ul>
 
+<h2>🖋️ Made by</h2>
+<p>👨‍💻 sinaptm</p>
