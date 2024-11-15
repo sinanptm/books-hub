@@ -10,7 +10,7 @@ const connectDB_1 = __importDefault(require("./config/connectDB"));
 const routes_1 = __importDefault(require("./routes"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)({
-    origin: config_1.CLIENT_URL,
+    origin: [config_1.CLIENT_URL, 'http://localhost:3000'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: "*"
 }));
