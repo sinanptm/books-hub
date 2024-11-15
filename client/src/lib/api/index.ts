@@ -1,8 +1,10 @@
 import { IBook } from "@/types";
 import axios from "axios";
 
+const baseURL = "https://books-hub-fnso.onrender.com"; // http://localhost:8000
+
 const instance = axios.create({
-    baseURL:"http://localhost:8000",
+    baseURL,
     headers: {
         "Content-Type": "application/json"
     }
