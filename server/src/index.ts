@@ -7,7 +7,7 @@ import routes from './routes';
 const app = express();
 
 app.use(cors({
-    origin: CLIENT_URL,
+    origin: [CLIENT_URL!, 'http://localhost:3000'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: "*"
 }));
