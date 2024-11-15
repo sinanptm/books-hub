@@ -6,8 +6,9 @@ import deleteBook from "../controllers/deleteBook";
 
 const routes = Router();
 
-routes.post('/', createBook);
-routes.get("/", getBooks);
+routes.route('/')
+    .post(createBook)
+    .get(getBooks);
 routes.delete('/:id', deleteBook);
 
 routes.use(errorHandler);
