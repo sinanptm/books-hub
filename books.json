@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0ef"
+  },
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "description": "Published in 1960, it is widely regarded as a classic of modern American literature, addressing themes of racial injustice and moral growth in the South."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f0"
+  },
+  "title": "1984",
+  "author": "George Orwell",
+  "description": "A dystopian social science fiction novel and cautionary tale about the dangers of totalitarianism, published in 1949."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f1"
+  },
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "description": "A romantic novel published in 1813 that critiques the British landed gentry at the end of the 18th century."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f2"
+  },
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "description": "A novel set in the Jazz Age on Long Island, near New York City, exploring themes of decadence, idealism, resistance to change, and social upheaval."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f3"
+  },
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "description": "First published in 1851, it is the story of Captain Ahab’s obsessive quest to kill Moby Dick, the giant white sperm whale."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f4"
+  },
+  "title": "The Catcher in the Rye",
+  "author": "J.D. Salinger",
+  "description": "A novel about teenage rebellion and alienation, published in 1951. It follows the experiences of Holden Caulfield in New York City."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f5"
+  },
+  "title": "The Lord of the Rings",
+  "author": "J.R.R. Tolkien",
+  "description": "An epic fantasy novel written by English author J.R.R. Tolkien, following the quest to destroy the One Ring."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f6"
+  },
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "description": "Published in 1937, it follows the journey of Bilbo Baggins, a hobbit who joins a group of dwarves to reclaim their mountain home."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f7"
+  },
+  "title": "Brave New World",
+  "author": "Aldous Huxley",
+  "description": "A dystopian novel published in 1932 that explores a futuristic society shaped by genetic engineering and psychological manipulation."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f8"
+  },
+  "title": "Fahrenheit 451",
+  "author": "Ray Bradbury",
+  "description": "A novel about a future society where books are banned and 'firemen' burn any that are found. Published in 1953."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0f9"
+  },
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "description": "Published in 1847, it follows the story of an orphaned girl’s journey through hardships and self-discovery."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0fa"
+  },
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "description": "A psychological novel about crime, guilt, and redemption, focusing on the moral dilemmas of a young student named Raskolnikov."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0fb"
+  },
+  "title": "War and Peace",
+  "author": "Leo Tolstoy",
+  "description": "An epic novel set during the Napoleonic Wars, examining Russian society and the interconnected lives of various families."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0fc"
+  },
+  "title": "The Odyssey",
+  "author": "Homer",
+  "description": "An ancient Greek epic poem attributed to Homer, focusing on the adventures of Odysseus on his journey home after the Trojan War."
+},
+{
+  "_id": {
+    "$oid": "6736a97e13fb980ce52ba0fd"
+  },
+  "title": "The Brothers Karamazov",
+  "author": "Fyodor Dostoevsky",
+  "description": "A philosophical novel examining moral dilemmas, faith, and free will through the lives of the Karamazov family."
+}]

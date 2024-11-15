@@ -9,7 +9,7 @@ import { memo, useCallback, useState } from 'react';
 import { IBook } from '@/types';
 import { toast } from '@/hooks/use-toast';
 
-const AddNewBook = ({ addBook, isLoading }: { addBook: (book: IBook) => {}; isLoading: boolean; }) => {
+const AddNewBook = ({ addBook, isLoading }: { addBook: (book: IBook) => Promise<IBook>; isLoading: boolean; }) => {
     const [newBook, setNewBook] = useState<IBook>({
         title: '',
         author: '',
@@ -35,6 +35,7 @@ const AddNewBook = ({ addBook, isLoading }: { addBook: (book: IBook) => {}; isLo
                 variant: "default"
             });
             setNewBook({ title: '', author: '', description: '' });
+            //eslint-disable-next-line
         } catch (error) {
             toast({
                 title: "Error",
@@ -44,31 +45,60 @@ const AddNewBook = ({ addBook, isLoading }: { addBook: (book: IBook) => {}; isLo
         }
     }, [newBook, addBook]);
 
+
     return (
         <Card className="mb-8 bg-secondary">
             <CardContent className="pt-6">
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                    <Input
-                        placeholder="Title"
-                        value={newBook.title}
-                        onChange={(e) => setNewBook({ ...newBook, title: e.target.value })}
-                        className="bg-background"
-                        disabled={isLoading}
-                    />
-                    <Input
-                        placeholder="Author"
-                        value={newBook.author}
-                        onChange={(e) => setNewBook({ ...newBook, author: e.target.value })}
-                        className="bg-background"
-                        disabled={isLoading}
-                    />
-                    <Textarea
-                        placeholder="Description"
-                        value={newBook.description}
-                        onChange={(e) => setNewBook({ ...newBook, description: e.target.value })}
-                        className="bg-background resize-none"
-                        disabled={isLoading}
-                    />
+                    <div className="group relative">
+                        <label
+                            htmlFor="title"
+                            className="origin-start absolute top-1/2 block -translate-y-1/2 cursor-text px-1 text-sm text-muted-foreground/70 transition-all group-focus-within:pointer-events-none group-focus-within:top-0 group-focus-within:cursor-default group-focus-within:text-xs group-focus-within:font-medium group-focus-within:text-foreground has-[+input:not(:placeholder-shown)]:pointer-events-none has-[+input:not(:placeholder-shown)]:top-0 has-[+input:not(:placeholder-shown)]:cursor-default has-[+input:not(:placeholder-shown)]:text-xs has-[+input:not(:placeholder-shown)]:font-medium has-[+input:not(:placeholder-shown)]:text-foreground"
+                        >
+                            <span className="inline-flex bg-background px-2">Title Of Book *</span>
+                        </label>
+                        <Input
+                            id="title"
+                            placeholder=""
+                            value={newBook.title}
+                            onChange={(e) => setNewBook({ ...newBook, title: e.target.value })}
+                            disabled={isLoading}
+                        />
+                    </div>
+                    <div className="group relative">
+                        <label
+                            htmlFor="author"
+                            className="origin-start absolute top-1/2 block -translate-y-1/2 cursor-text px-1 text-sm text-muted-foreground/70 transition-all group-focus-within:pointer-events-none group-focus-within:top-0 group-focus-within:cursor-default group-focus-within:text-xs group-focus-within:font-medium group-focus-within:text-foreground has-[+input:not(:placeholder-shown)]:pointer-events-none has-[+input:not(:placeholder-shown)]:top-0 has-[+input:not(:placeholder-shown)]:cursor-default has-[+input:not(:placeholder-shown)]:text-xs has-[+input:not(:placeholder-shown)]:font-medium has-[+input:not(:placeholder-shown)]:text-foreground"
+                        >
+                            <span className="inline-flex bg-background px-2">Author Name *</span>
+                        </label>
+                        <Input
+                            placeholder=""
+                            id="author"
+                            value={newBook.author}
+                            onChange={(e) => setNewBook({ ...newBook, author: e.target.value })}
+                            className="bg-background"
+                            disabled={isLoading}
+                        />
+                    </div>
+                    <div>
+                        <label
+                            htmlFor="description"
+                        >
+                            <span className="inline-flex bg-background px-2">Description About Book *</span>
+                        </label>
+                        <Textarea
+                            placeholder=""
+                            id="description"
+                            value={newBook.description}
+                            onChange={(e) => setNewBook({ ...newBook, description: e.target.value })}
+                            className=""
+                            disabled={isLoading}
+                        />
+                    </div>
+
+
+
                     <Button
                         type="submit"
                         className="bg-primary text-primary-foreground"
@@ -79,7 +109,7 @@ const AddNewBook = ({ addBook, isLoading }: { addBook: (book: IBook) => {}; isLo
                     </Button>
                 </form>
             </CardContent>
-        </Card>
+        </Card >
     );
 };
 
