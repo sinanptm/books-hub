@@ -30,7 +30,6 @@ export const useBook = () => {
     setBooks(prevBooks => [...prevBooks, newBook]);
     
     try {
-      setLoading(true);
       const { book: createdBook } = await createBook(book);
       
       setBooks(prevBooks => 
@@ -41,9 +40,7 @@ export const useBook = () => {
     } catch (error) {
       setBooks(prevBooks => prevBooks.filter(b => b._id !== tempId));
       throw error;
-    } finally {
-      setLoading(false);
-    }
+    } 
   }, []); 
 
   const removeBook = useCallback(async (id: string) => {
@@ -53,14 +50,11 @@ export const useBook = () => {
     setBooks(prevBooks => prevBooks.filter(book => book._id !== id));
 
     try {
-      setLoading(true);
       await deleteBook(id);
     } catch (error) {
       setBooks(prevBooks => [...prevBooks, bookToRemove]);
       throw error; 
-    } finally {
-      setLoading(false);
-    }
+    } 
   }, [books]);
 
   return { books, isLoading, addBook, removeBook, fetchBooks };
