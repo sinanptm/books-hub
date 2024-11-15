@@ -5,24 +5,30 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon dist/index.js",
-    "dev":"nodemon src/index.ts",
-    "build":"tsc"
+    "start": "concurrently \"nodemon dist/index.js\" \"node dist/keepAlive.js\"",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "keep-alive": "node dist/keepAlive.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^9.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongoose": "^8.8.1"
+    "mongoose": "^8.8.1",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/node-fetch": "^2.6.12",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
-    }
+  }
 }
